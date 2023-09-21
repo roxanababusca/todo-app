@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose {
+  --tw-prose-body: #fafafa;
+}
+
+@layer components{
+  section {
+  @apply min-h-[90%] px-4 lg:px-8 py-4 lg:py-24;
+  }
+  h1 {
+  @apply text-4xl font-light text-center md:text-6xl pb-4 bg-gradient-to-r from-green-300 via-blue-400 to-purple-500 bg-clip-text text-transparent;
+  }
+  h2 {
+  @apply bg-gradient-to-r from-green-300 via-blue-400 to-purple-500 bg-clip-text text-transparent text-4xl md:text-5xl text-center font-light pb-10;
+  }
+  p {
+  @apply mt-4 text-left lg:text-justify;
+  }
+  input {
+  @apply text-gray-900 w-[300px] my-6 rounded-lg border-none py-3 text-xl focus:outline-none focus:ring-2 focus:ring-purple-500;
+  }
+  form > div {
+  @apply mb-4 text-center;
+  }
+}
